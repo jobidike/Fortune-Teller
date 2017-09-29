@@ -9,8 +9,9 @@ public class FortuneTeller {
 		String lastName;
 		int age;
 		int birthMonth;
-		String favoriteRoygbivColor;
+		String roygbivColor;
 		int numberOfSiblings;
+		
 		
 		System.out.println("What is your first name?");
 		firstName=input.nextLine();
@@ -23,15 +24,23 @@ public class FortuneTeller {
 		birthMonth=input.nextInt();
 		input.nextLine();
 		System.out.println("What is your favorite Roygbiv color?");
-		favoriteRoygbivColor=input.nextLine();
+		roygbivColor=input.nextLine();
 		
-		if 
+		
+		if (roygbivColor.toLowerCase().contains("blue")) {//Make all lowercase
+			System.out.println("That's great!");
+		} else if (roygbivColor.toLowerCase().contains("help")) {
+			System.out.println("You can choose from these colors: Red, Orange, Green, Blue, Yellow, Violet, Indigo");
+		} else {
+			System.out.println("Alot of colors to choose from, huh?");
+		}
+		
 		System.out.println("How many siblings do you have?");
 		numberOfSiblings=input.nextInt();
 		input.nextLine();
 		
 		
-		double numberOne = 30;
+		double numberOne = 30;//change numbers can be the retirement
 		double numberTwo = 40;
 		System.out.println("EVEN OR ODD");
 		
