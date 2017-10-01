@@ -5,7 +5,7 @@ public class FortuneTeller {
 		
 		Scanner input = new Scanner (System.in);
 		
-		String firstName;
+		String firstName;  //Part one
 		String lastName;
 		int age;
 		int birthMonth;
@@ -37,32 +37,53 @@ public class FortuneTeller {
 		
 		System.out.println("How many siblings do you have?");
 		numberOfSiblings=input.nextInt();
-		input.nextLine();
+		input.nextLine();  
+		
+		//Part two
 		
 		
-		double numberOne = 30;//change numbers can be the retirement
-		double numberTwo = 40;
 		System.out.println("EVEN OR ODD");
+		int numberAge;
 		
-		System.out.println(numberOne);
-		numberOne = input.nextDouble();
+		System.out.println("Enter an Integar number:");
+		numberAge=input.nextInt();
 		input.nextLine();
-		System.out.println(numberTwo);
-		numberTwo = input.nextDouble();
-		input.nextLine();
+		int retirementYearsEven=20;
+		int retirementYearsOdd=25;
 		
-		if ((numberOne/2==15) && (numberTwo/2==20)) {
-			System.out.println(numberOne + "is odd");
+		if (numberAge % 2 ==0) {
+			System.out.println(numberAge + "is even");	
 		} else {
-			System.out.println(numberTwo + "is even");
+			System.out.println(numberAge + "is odd");
+			
 		}
 		
-//		
-//		if(number%2==1) {
-//			System.out.println(number + "is even");
-//		}else {
-//			System.out.println(number + "is odd");
+		//Part three
 		
+		
+		
+		
+		int monthOfBirth = 0;
+		
+		System.out.println("Please enter your birth month.");
+		monthOfBirth=input.nextInt();
+		input.nextLine();
+		
+		switch (monthOfBirth) {
+		case 1: case 2: case 3: case 4:
+			System.out.println("You have a balance of 1000000.00 left in your bank account");
+			break;
+		case 5: case 6: case 7: case 8:
+			System.out.println("You have a balance of  450000.00 left in your bank account");
+			break;
+		case 9: case 10: case 11: case 12:
+			System.out.println("You have a balance of 175000.00 left in your bank account");
+		break;
+		default: 
+			System.out.println("Bank balance of 0.00");
+		}
+		
+			
 		 
 		
 		
