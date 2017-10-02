@@ -9,7 +9,7 @@ public class FortuneTeller {
 		String lastName;
 		int age;
 		int birthMonth;
-		String favColor= ("red"+ "orange"+ "green"+ "blue");
+		String favColor;
 		int numSiblings;
 		int retirementYears=0;
 		String bankBalance;
