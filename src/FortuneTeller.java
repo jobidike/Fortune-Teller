@@ -5,29 +5,18 @@ public class FortuneTeller {
 		
 		Scanner input = new Scanner (System.in);
 		
-		String firstName;  
-		String lastName;
-		int age;
-		int birthMonth;
-		String favColor;
-		int numSiblings;
-		int retirementYears=0;
-		String bankBalance;
-		String location=null;
-		String transportation=null;
-		
 		System.out.println("What is your first name?");
-		firstName=input.nextLine();
+		String firstName=input.nextLine();
 		System.out.println("What is your last name?");
-		lastName=input.nextLine();
+		String lastName=input.nextLine();
 		System.out.println("Enter your age.");
-		age=input.nextInt();
+		int age=input.nextInt();
 		input.nextLine();
 		System.out.println("Enter your birth month.");
-		birthMonth=input.nextInt();
+		int birthMonth=input.nextInt();
 		input.nextLine();
 		System.out.println("What is your favorite ROYGBIV color? If you are unsure what ROYGBIV is then enter help. ");
-		favColor=input.nextLine();
+		String favColor=input.nextLine();
 		
 		if (favColor.toLowerCase().contains("blue")) {//Make all lowercase
 			System.out.println("That's great!");
@@ -50,7 +39,7 @@ public class FortuneTeller {
 		}
 		
 		System.out.println("How many siblings do you have?");
-		numSiblings=input.nextInt();
+		int numSiblings=input.nextInt();
 		input.nextLine();  
 		
 		//Odd OR EVEN
@@ -60,6 +49,7 @@ public class FortuneTeller {
 		System.out.println("Enter an Integar number:");
 		numberAge=input.nextInt();
 		input.nextLine();
+		int retirementYears=0;
 		
 		if (numberAge % 2 ==0) {
 			System.out.println(numberAge + "is even");
@@ -72,6 +62,7 @@ public class FortuneTeller {
 		//Vacation Home Location
 		System.out.println("Enter your number of siblings to see the location of your vacation home:");
 		numSiblings=input.nextInt();
+		String location=null;
 		
 		if (numSiblings == 0) {
 			System.out.println("Rio de Janeiro, Brazil");
@@ -97,6 +88,7 @@ public class FortuneTeller {
 		System.out.println("Enter your favorite color to see your mode of transportation:");
 		input.nextLine();
 		favColor=input.nextLine();
+		String transportation=null;
 		
 		if (favColor.equalsIgnoreCase("red")){
             System.out.println("Uber");
@@ -125,6 +117,7 @@ public class FortuneTeller {
 		
 		System.out.println("Please enter your birth month to see your bank balance.");
 		birthMonth=input.nextInt();
+		String bankBalance;
 		
 		switch (birthMonth) {
 		case 1: case 2: case 3: case 4:
